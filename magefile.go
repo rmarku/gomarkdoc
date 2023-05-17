@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/princjef/mageutil/bintool"
-	"github.com/princjef/mageutil/shellcmd"
+	"github.com/rmarku/mageutil/bintool"
+	"github.com/rmarku/mageutil/shellcmd"
 )
 
 var linter = bintool.Must(bintool.New(

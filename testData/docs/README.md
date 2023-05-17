@@ -3,14 +3,14 @@
 # docs
 
 ```go
-import "github.com/princjef/gomarkdoc/testData/docs"
+import "github.com/rmarku/gomarkdoc/testData/docs"
 ```
 
 Package docs exercises the documentation features of golang 1.19 and above at the package documentation level.
 
 ### This is a heading
 
-This heading has a paragraph with a reference to the standard library [math/rand](<https://pkg.go.dev/math/rand/>) as well as a function in the file [Func](<#Func>), a type [Type](<#Type>), a type's function [Type.Func](<#Type.Func>), a non\-standard library package [golang.org/x/crypto/bcrypt.Cost](<https://pkg.go.dev/golang.org/x/crypto/bcrypt/#Cost>), an external link [Outside Link](<https://golang.org/doc/articles/json_and_go.html>) and a \[broken link\].
+This heading has a paragraph with a reference to the standard library [math/rand](https://pkg.go.dev/math/rand/) as well as a function in the file [Func](#Func), a type [Type](#Type), a type's function [Type.Func](#Type.Func), a non\-standard library package [golang.org/x/crypto/bcrypt.Cost](https://pkg.go.dev/golang.org/x/crypto/bcrypt/#Cost), an external link [Outside Link](https://golang.org/doc/articles/json_and_go.html) and a \[broken link\].
 
 It also has a numbered list:
 
@@ -35,7 +35,7 @@ Non\-numbered lists
 Plus blank lines:
 
 - First
-  
+
   another paragraph
 
 - Second
@@ -59,21 +59,20 @@ in a random
 		way
 ```
 
-There's also another file with a struct called [AnotherStruct](<#AnotherStruct>) that has additional methods and fields.
+There's also another file with a struct called [AnotherStruct](#AnotherStruct) that has additional methods and fields.
 
-We also have constants like [Constant](<#Constant>) and [Const1](<#Const1>) plus variables like [Var](<#Var>) and and [VarB](<#VarA>).
+We also have constants like [Constant](#Constant) and [Const1](#Const1) plus variables like [Var](#Var) and and [VarB](#VarA).
 
 ## Index
 
-- [Constants](<#constants>)
-- [Variables](<#variables>)
-- [func Func(param int) int](<#Func>)
-- [type AnotherStruct](<#AnotherStruct>)
-  - [func NewAnotherStruct() *AnotherStruct](<#NewAnotherStruct>)
-  - [func (s *AnotherStruct) GetField() string](<#AnotherStruct.GetField>)
-- [type Type](<#Type>)
-  - [func (t *Type) Func()](<#Type.Func>)
-
+- [Constants](#constants)
+- [Variables](#variables)
+- [func Func(param int) int](#Func)
+- [type AnotherStruct](#AnotherStruct)
+  - [func NewAnotherStruct() \*AnotherStruct](#NewAnotherStruct)
+  - [func (s \*AnotherStruct) GetField() string](#AnotherStruct.GetField)
+- [type Type](#Type)
+  - [func (t \*Type) Func()](#Type.Func)
 
 ## Constants
 
@@ -112,7 +111,8 @@ var Var = 2
 ```
 
 <a name="Func"></a>
-## func [Func](<https://github.com/princjef/gomarkdoc/blob/master/testData/docs/docs.go#L64>)
+
+## func [Func](https://github.com/rmarku/gomarkdoc/blob/master/testData/docs/docs.go#L64)
 
 ```go
 func Func(param int) int
@@ -121,9 +121,10 @@ func Func(param int) int
 Func is present in this file.
 
 <a name="AnotherStruct"></a>
-## type [AnotherStruct](<https://github.com/princjef/gomarkdoc/blob/master/testData/docs/anotherFile.go#L5-L7>)
 
-AnotherStruct has methods like [\*AnotherStruct.GetField](<#AnotherStruct.GetField>) and also has an initializer called [NewAnotherStruct](<#NewAnotherStruct>).
+## type [AnotherStruct](https://github.com/rmarku/gomarkdoc/blob/master/testData/docs/anotherFile.go#L5-L7)
+
+AnotherStruct has methods like [\*AnotherStruct.GetField](#AnotherStruct.GetField) and also has an initializer called [NewAnotherStruct](#NewAnotherStruct).
 
 ```go
 type AnotherStruct struct {
@@ -132,16 +133,18 @@ type AnotherStruct struct {
 ```
 
 <a name="NewAnotherStruct"></a>
-### func [NewAnotherStruct](<https://github.com/princjef/gomarkdoc/blob/master/testData/docs/anotherFile.go#L10>)
+
+### func [NewAnotherStruct](https://github.com/rmarku/gomarkdoc/blob/master/testData/docs/anotherFile.go#L10)
 
 ```go
 func NewAnotherStruct() *AnotherStruct
 ```
 
-NewAnotherStruct\(\) makes [\*AnotherStruct](<#AnotherStruct>).
+NewAnotherStruct\(\) makes [\*AnotherStruct](#AnotherStruct).
 
 <a name="AnotherStruct.GetField"></a>
-### func \(\*AnotherStruct\) [GetField](<https://github.com/princjef/gomarkdoc/blob/master/testData/docs/anotherFile.go#L17>)
+
+### func \(\*AnotherStruct\) [GetField](https://github.com/rmarku/gomarkdoc/blob/master/testData/docs/anotherFile.go#L17)
 
 ```go
 func (s *AnotherStruct) GetField() string
@@ -150,7 +153,8 @@ func (s *AnotherStruct) GetField() string
 GetField gets \[\*AnotherStruct.Field\].
 
 <a name="Type"></a>
-## type [Type](<https://github.com/princjef/gomarkdoc/blob/master/testData/docs/docs.go#L69>)
+
+## type [Type](https://github.com/rmarku/gomarkdoc/blob/master/testData/docs/docs.go#L69)
 
 Type is a type in this file.
 
@@ -159,7 +163,8 @@ type Type struct{}
 ```
 
 <a name="Type.Func"></a>
-### func \(\*Type\) [Func](<https://github.com/princjef/gomarkdoc/blob/master/testData/docs/docs.go#L72>)
+
+### func \(\*Type\) [Func](https://github.com/rmarku/gomarkdoc/blob/master/testData/docs/docs.go#L72)
 
 ```go
 func (t *Type) Func()
@@ -167,4 +172,4 @@ func (t *Type) Func()
 
 TypeFunc is a func within a type in this file.
 
-Generated by [gomarkdoc](<https://github.com/princjef/gomarkdoc>)
+Generated by [gomarkdoc](https://github.com/rmarku/gomarkdoc)

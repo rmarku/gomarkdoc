@@ -1,6 +1,6 @@
 package format
 
-import "github.com/princjef/gomarkdoc/lang"
+import "github.com/rmarku/gomarkdoc/lang"
 
 // Format is a generic interface for formatting documentation contents in a
 // particular way.

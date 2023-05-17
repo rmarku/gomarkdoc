@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/matryer/is"
-	"github.com/princjef/gomarkdoc/format"
-	"github.com/princjef/gomarkdoc/lang"
+	"github.com/rmarku/gomarkdoc/format"
+	"github.com/rmarku/gomarkdoc/lang"
 )
 
 func TestBold(t *testing.T) {
