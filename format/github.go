@@ -160,5 +160,5 @@ func (f *GitHubFlavoredMarkdown) AccordionTerminator() (string, error) {
 
 // Escape escapes special markdown characters from the provided text.
 func (f *GitHubFlavoredMarkdown) Escape(text string) string {
-	return formatcore.Escape(text)
+	return text
 }
